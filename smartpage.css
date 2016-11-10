@@ -1,0 +1,129 @@
+#free { color: black; }
+#finished{ text-decoration: line-through; background-color: #bdfffa;}
+#listed{color: red; font-size: 12pt;}
+#intro{
+	display: block;
+	font-family: palatino;
+	text-align: left;
+	width: 800px;
+	}
+#Calendar{
+	margin: 0px 50px;
+	display: block;
+	width: 700px;
+	}
+#whole{
+	display: block;
+	padding: 20px;
+	width: 800px;
+	text-align: center;
+	}
+#whole2{
+	display:none;
+	}
+#dates{
+	text-align: left;
+	float: center;
+    width: 700px;
+	font-family: palatino;
+	}
+.td {
+    float: left;
+    width: 90px;
+    height: 90px; 
+    border: 1px solid blue;
+    line-height: 20px; 
+    overflow: hidden;
+	font-family: inherit; /*Use of Inheritance*/
+	}/*Use of classes*/
+.pon{
+	background: #cfcfcf;
+	color: #626262;
+	}
+.dark {
+    color: white;
+    height:30px;
+    text-align: center;
+    background: #6666ff;
+    border-color: #a52a2a;
+	}
+#detail{
+	border-radius:5px;
+	position: absolute; 
+	z-index: 10; 
+	background-color: #E0366E; 
+	display: none; 
+	opacity: 0.8;  
+	text-align: left;
+	filter: Alpha(opacity=80);
+	width:185px;
+	left: 0px;
+	top: 0px;
+	}
+#button1 {
+	display:block;
+	cursor: pointer;
+	}
+#button2 {
+	display:none;
+	}
+#rightlist{
+	position:fixed;
+	right: 50px;
+	top:50px;
+	opacity:0.6;
+	border-width: thin; 
+	border-style: solid; 
+	padding: 10px; 
+	background-color: #ff9c00; 
+	width: 350px;
+	font-family: palatino;
+	}
+
+#rightlist2{
+	border-width: thin; 
+	border-style: solid; 
+	padding: 10px; 
+	background-color: #ffffff; 
+	}
+
+.mouseon{
+	float: left;
+    width: 90px;
+    height: 90px; 
+    border: 1px solid blue;
+    line-height: 20px; 
+	background-color: #dbf6ff;
+	overflow: hidden;
+    overflow-y: scroll;
+	cursor: text;
+	}
+
+.mouseon1{
+	float: left;
+    width: 90px;
+    height: 90px; 
+    border: 1px solid blue;
+    line-height: 20px; 
+	background-color: #dbf6ff;
+	overflow: hidden;
+	cursor: text;
+	}
+		
+.plan{
+	text-align: center;
+	}
+	
+.a1{
+	color: red;
+	}
+	
+.a2{
+	text-decoration: line-through; 
+	background-color: #bdfffa;
+	}
+	
+#content{
+	 color: #ffffff; 
+	 font-size: 20px;
+	 }

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="smartpage.css"/>
+<script type="text/javascript" src="artDialog/artDialog.js?skin=aero"></script>
+<script type="text/javascript" src="smartpage.js"></script>
+<script type="text/javascript" src="jquery-1.8.0.js"></script>
+<script type="text/javascript" src="jquery-1.8.0.min.js"></script>
+<title>Calendar</title>
+</head>
+<body onload="today()">
+<div id="whole">
+<h1>
+Calendar
+</h1>
+<div id="intro">
+This is a calendar for you adding events.  You could click on any date 
+which belong to this month to add an event.  If you add more than three 
+events on the same date, it will warn you.  If you continue to add events,
+ a scroll will show in the block of the date.  When you put your mouse on 
+ the block of each date, there will be details you put in.  If you add an wrong message, 
+you can click it and delete it.  When you complished the event, you can 
+set its status to finished by clicking on it.  If you want to print it
+out, you should add the event to the plan list on your right, and then
+click on the print button to print.<br/>
+<span class="a1">a</span>&nbsp;&nbsp;it has been added to the list <br/>
+<span class="a2">a</span>&nbsp;&nbsp;it has finished
+</div>
+<div id="Calendar">
+<div id="c-head">
+<h3>Calendar of October, 2015</h3>
+</div>
+<div id="dates">
+<div class="tr">
+<div class="td dark">Sunday</div>
+<div class="td dark">Monday</div>
+<div class="td dark">Tuesday</div>
+<div class="td dark">Wednesday</div>
+<div class="td dark">Thursday</div>
+<div class="td dark">Friday</div>
+<div class="td dark">Saturday</div>
+</div>
+<div class="tr">
+<div class="td pon">27</div>
+<div class="td pon">28</div>
+<div class="td pon">29</div>
+<div class="td pon">30</div>
+<div id="x1" class="td" onclick="add(this)" onmousemove="changeclass(this)" onmouseout="changeclass2(this)">1</div>
+<div id="x2" class="td" onclick="add(this)" onmousemove="changeclass(this)" onmouseout="changeclass2(this)">2</div>
+<div id="x3" class="td" onclick="add(this)" onmousemove="changeclass(this)" onmouseout="changeclass2(this)">3</div>
+</div>
+<div class="tr">
+<div id="x4" class="td" onclick="add(this)" onmousemove="changeclass(this)" onmouseout="changeclass2(this)">4</div>
+<div id="x5" class="td" onclick="add(this)" onmousemove="changeclass(this)" onmouseout="changeclass2(this)">5</div>
+<div id="x6" class="td" onclick="add(this)" onmousemove="changeclass(this)" onmouseout="changeclass2(this)">6</div>
+<div id="x7" class="td" onclick="add(this)" onmousemove="changeclass(this)" onmouseout="changeclass2(this)">7</div>
+<div id="x8" class="td" onclick="add(this)" onmousemove="changeclass(this)" onmouseout="changeclass2(this)">8</div>
+<div id="x9" class="td" onclick="add(this)" onmousemove="changeclass(this)" onmouseout="changeclass2(this)">9</div>
+<div id="a" class="td" onclick="add(this)" onmousemove="changeclass(this)" onmouseout="changeclass2(this)">10</div>
+</div>
+<div class="tr">
+<div id="b" class="td" onclick="add(this)" onmousemove="changeclass(this)" onmouseout="changeclass2(this)">11</div>
+<div id="c" class="td" onclick="add(this)" onmousemove="changeclass(this)" onmouseout="changeclass2(this)">12</div>
+<div id="d" class="td" onclick="add(this)" onmousemove="changeclass(this)" onmouseout="changeclass2(this)">13</div>
+<div id="e" class="td" onclick="add(this)" onmousemove="changeclass(this)" onmouseout="changeclass2(this)">14</div>
+<div id="f" class="td" onclick="add(this)" onmousemove="changeclass(this)" onmouseout="changeclass2(this)">15</div>
+<div id="g" class="td" onclick="add(this)" onmousemove="changeclass(this)" onmouseout="changeclass2(this)">16</div>
+<div id="h" class="td" onclick="add(this)" onmousemove="changeclass(this)" onmouseout="changeclass2(this)">17</div>
+</div>
+<div class="tr">
+<div id="i" class="td" onclick="add(this)" onmousemove="changeclass(this)" onmouseout="changeclass2(this)">18</div>
+<div id="j" class="td" onclick="add(this)" onmousemove="changeclass(this)" onmouseout="changeclass2(this)">19</div>
+<div id="k" class="td" onclick="add(this)" onmousemove="changeclass(this)" onmouseout="changeclass2(this)">20</div>
+<div id="l" class="td" onclick="add(this)" onmousemove="changeclass(this)" onmouseout="changeclass2(this)">21</div>
+<div id="m" class="td" onclick="add(this)" onmousemove="changeclass(this)" onmouseout="changeclass2(this)">22</div>
+<div id="n" class="td" onclick="add(this)" onmousemove="changeclass(this)" onmouseout="changeclass2(this)">23</div>
+<div id="o" class="td" onclick="add(this)" onmousemove="changeclass(this)" onmouseout="changeclass2(this)">24</div>
+</div>
+<div class="tr">
+<div id="p" class="td" onclick="add(this)" onmousemove="changeclass(this)" onmouseout="changeclass2(this)">25</div>
+<div id="q" class="td" onclick="add(this)" onmousemove="changeclass(this)" onmouseout="changeclass2(this)">26</div>
+<div id="r" class="td" onclick="add(this)" onmousemove="changeclass(this)" onmouseout="changeclass2(this)">27</div>
+<div id="s" class="td" onclick="add(this)" onmousemove="changeclass(this)" onmouseout="changeclass2(this)">28</div>
+<div id="t" class="td" onclick="add(this)" onmousemove="changeclass(this)" onmouseout="changeclass2(this)">29</div>
+<div id="u" class="td" onclick="add(this)" onmousemove="changeclass(this)" onmouseout="changeclass2(this)">30</div>
+<div id="v" class="td" onclick="add(this)" onmousemove="changeclass(this)" onmouseout="changeclass2(this)">31</div>
+</div>
+<div class="tr">
+<div class="td pon">1</div>
+<div class="td pon">2</div>
+<div class="td pon">3</div>
+<div class="td pon">4</div>
+<div class="td pon">5</div>
+<div class="td pon">6</div>
+<div class="td pon">7</div>
+</div>
+</div>
+</div>
+</div>
+<div id="detail">
+<div id="content">
+</div>
+</div>
+<div id="rightlist">
+<blockquote class="plan">
+<h3 onclick="printform();">
+Plan List
+<span id="button1">(Click to Print)</span>
+</h3>
+<div class="planlist" style="text-align:left">
+<div id="list">
+</div>
+</div>
+</blockquote>
+</div>
+</body>
+</html>
